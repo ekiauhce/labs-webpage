@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Язык HTML</title>
+<link rel="stylesheet" href="MyCss.css">
+<style>
+h4.HeadBlue {
+    color: blue;
+}
+</style>
+</head>
+<body>
+    <main style="width: 50%; margin: auto;">
+        <h2 style="text-align: center;">Язык HTML</h2>
+        <table>
+            <tr>
+                <td rowspan="2">
+                    <img src="./logo.png" width="125" height="125">
+                    </td>
+                <td style="font-style: italic; color: red;">
+                    <p style="text-indent: 20px;">
+                        HTML - язык разметки (форматирования)
+                        текстовых документов, ссылающихся на другие
+                        документы.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Функции HTML:</h3>
+                    <ul>
+                        <li>поддержка состава, структуры, связей документов;</li>
+                        <li>поддержка внешнего вида документов</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <table id="features" style="margin: auto; width: 70%;">
+            <caption>
+                <h3>Возможности HTML</h3>
+            </caption>
+            <tr>
+                <th>Возможности</th><th>Тэги</th>
+            </tr>
+            <tr>
+                <td>Стили</td><td>B, I, H1, FONT, ...</td>
+            </tr>
+            <tr>
+                <td>Списки</td><td>UL, OL, LI, ...</td>
+            </tr>
+            <tr>
+                <td>Таблицы</td><td>TABLE, TR, TD, ...</td>
+            </tr>
+        </table>
+        <h4 class="HeadBlue">Формы</h4>
+        <form>
+            <p>Позволяют вводить данные и отправлять их на сервер.</p>
+            <p>
+                <label> Введите Ваше имя:</label>
+                <input type="text">
+            </p>
+            <p>
+                <label>Введите Ваше сообщение:</label><br>
+                <textarea cols="30"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Сброс"></input>
+                
+            </p>
+        </form>
+        <h4>Каскадные таблицы стилей (CSS)</h4>
+        <p>Позволяют гибко менять внешний вид документов.</p>
+        <p><a href="./another.html">Ссылка на другую страницу</a></p>
+        <hr size="6" width="47%"  color="red">
+    </main>
+</body>
+<style>
+h3 {
+    font-style: italic;
+}
+#features, #features tr > * {
+    border: solid;
+}
+a::before {
+    content: "🌐 ";
+}
+</style>
+</html>
